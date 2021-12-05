@@ -14,9 +14,9 @@ function enableInteraction() {
     }
     if (true){
         var x = document.getElementsByTagName('model-viewer');
-        console.log(x)
-        console.log('button ')
-        console.log(x.length)
+        // console.log(x)
+        // console.log('button ')
+        // console.log(x.length)
         Array.from(x).forEach((el) => {
             // Do stuff here
             if (start_interaction) {
@@ -31,4 +31,3 @@ function enableInteraction() {
         });
     }
 }
-

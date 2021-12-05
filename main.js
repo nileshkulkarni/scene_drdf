@@ -19,7 +19,7 @@ function showDemo(id) {
         });
     }
     
-    var rank = [1, 2, 3, 4, 5];
+    var rank = [1, 2, 3, 4, 5, 6,7,8];
     rank.forEach((ind) =>{
         var demoid = "demo".concat(ind)
         var y = document.getElementById(demoid);
