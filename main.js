@@ -1,6 +1,7 @@
 function showDemo(id) {
     
     console.log('Clicked')
+    console.log(id)
     if (false){
         var x = document.getElementsByClassName('demo');
         console.log(x)
@@ -19,7 +20,7 @@ function showDemo(id) {
         });
     }
     
-    var rank = [1, 2, 3, 4, 5, 6,7,8];
+    var rank = [1, 2, 3, 4, 5, 6, 7, 8];
     rank.forEach((ind) =>{
         var demoid = "demo".concat(ind)
         var y = document.getElementById(demoid);
