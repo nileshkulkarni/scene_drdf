@@ -84,6 +84,11 @@ function enableInteractionTieControls() {
 }
 
 
+var modelViewerLoaded=function(obj, evt){
+    obj.jumpCameraToGoal()
+    console.log('fired load')
+}
+
 var modelViewerClick=function(obj, evt){
     
     // console.log(id)
@@ -178,6 +183,8 @@ function modelEventListeners(){
         //     // console.log(evt);
         // })
         el.addEventListener('camera-change', modelViewerClick.bind(event, el), 'false')
+        el.addEventListener('load', modelViewerLoaded.bind(event, el), 'false')
+        // el.addEventListener('model-visibility', modelViewerLoaded.bind(event, el), 'false')
     });
 
 }
@@ -253,11 +260,17 @@ function setParametersDemoDir(element, tagName){
     console.log(element)
     model_gt_div.src = element['gt_model']
     model_gt_div.cameraOrbit = element['camera_controls']
-    model_gt_div.jumpCameraToGoal()
+ 
     var model_pred_div = document.getElementById(tagName + '_pred')
+    console.log(model_pred_div)
     model_pred_div.src = element['pred_model']
     model_pred_div.cameraOrbit = element['camera_controls']
-    model_pred_div.jumpCameraToGoal()
+    if (model_gt_div.loaded){
+        model_gt_div.jumpCameraToGoal()
+    }
+    if (model_pred_div.loaded){
+        model_pred_div.jumpCameraToGoal()
+    }   
 }
 function create_data_page(elements, numElePerPage){
     for (var ex=0; ex<numElePerPage; ex++){
