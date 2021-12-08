@@ -472,8 +472,9 @@
                     <span style= "font-size:22px"> We present predicted 3D model from our approach  using an interactive visualizer. Our model takes input the image and generates the output under DRDF.
                     <p> Demo Instructions</p> </span>
                     <ul>
-                        <li> To play with the model <i> check</i> the "Enable interactions" box.</li>
+                        <li> To disable  the model <i> uncheck</i> the "Enable interactions" box.</li>
                         <li> To interact with the ground-truth and DRDF outputs independently <i> uncheck</i> "Tie Controls" box. </li>
+                        <li> Click on the models to view them from different angles. </li>
                     </div>
                 </td> </tr>
             </table>
@@ -523,7 +524,7 @@
         <table align=center width=1300px>
             <tr>
                 <td class="td-center" style="padding: 20px;">
-                    <input type="checkbox" value="0" onclick="enableInteraction()">
+                    <input type="checkbox" value="0" onclick="enableInteraction()" checked>
                     <p class="button button1" id="blink"> Enable Interaction</p>
                 </td>
                 <!-- <td class="td-center" style="padding: 20px;"> <button width=150px class="button button1" id="tie_controls"
@@ -573,13 +574,13 @@
                                 <model-viewer alt="" id=demo3_gt loading="eager" camera-orbit="77deg 91deg 11m"
                                     style="width:500;height:500" src=./assets/matterport/9462/combine_gt.glb ar
                                     ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                    camera-controls2 mv-id="demo3" mv-type="gt"></model-viewer>
+                                    camera-controls2 interaction-prompt="none"></model-viewer>
                             </td>
                             <td>
                                 <model-viewer alt="" id=demo3_pred loading="eager" camera-orbit="77deg 91deg 11m"
                                     style="width:500;height:500" src=./assets/matterport/9462/combine_pred.glb ar
                                     ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                    camera-controls2 mv-id="demo3" mv-type="pred"></model-viewer>
+                                    camera-controls2 interaction-prompt="none"></model-viewer>
                             </td>
                         </tr>
                     </table>
@@ -612,13 +613,13 @@
                                 <model-viewer alt="" id=demo2_gt loading="eager" camera-orbit="26deg 89deg 11m"
                                     style="width:500;height:500" src=./assets//matterport/1704/combine_gt.glb ar
                                     ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                    camera-controls2></model-viewer>
+                                    camera-controls2 interaction-prompt="none"></model-viewer>
                             </td>
                             <td>
                                 <model-viewer alt="" id=demo2_pred loading="eager" camera-orbit="26deg 89deg 11m"
                                     style="width:500;height:500" src=./assets/matterport/1704/combine_pred.glb ar
                                     ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                    camera-controls2></model-viewer>
+                                    camera-controls2 interaction-prompt="none"></model-viewer>
                             </td>
                         </tr>
                     </table>
@@ -650,13 +651,13 @@
                             <model-viewer alt="" id=demo1_gt loading="eager" camera-orbit="-151deg 92deg 11m"
                                 style="width:500;height:500" src=./assets/matterport/529/combine_gt.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                 interaction-prompt="none"></model-viewer>
                         </td>
                         <td>
                             <model-viewer alt="" id=demo1_pred loading="eager" camera-orbit="-151deg 92deg 11m"
                                 style="width:500;height:500" src=./assets/matterport/529/combine_pred.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                interaction-prompt="none"></model-viewer>
                         </td>
                     </tr>
                 </table>
@@ -687,13 +688,13 @@
                             <model-viewer alt="" id=demo4_gt loading="eager" camera-orbit="85deg 89deg 11m"
                                 style="width:500;height:500" src=./assets/matterport/5825/combine_gt.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                         <td>
                             <model-viewer alt="" id=demo4_pred loading="eager" camera-orbit="85deg 89deg 11m"
                                 style="width:500;height:500" src=./assets/matterport/5825/combine_pred.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                     </tr>
                 </table>
@@ -723,13 +724,13 @@
                             <model-viewer alt="" id=demo5_gt loading="eager" camera-orbit="18deg 88deg 11m"
                                 style="width:500;height:500" src=./assets//matterport/11869/combine_gt.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                         <td>
                             <model-viewer alt="" id=demo5_pred loading="eager" camera-orbit="18deg 88deg 11m"
                                 style="width:500;height:500" src=./assets//matterport/11869/combine_pred.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                     </tr>
                 </table>
@@ -750,13 +751,13 @@
                             <model-viewer alt="" id=demo6_gt loading="eager" camera-orbit="-117deg 90deg 11m"
                                 style="width:500;height:500" src=./assets//threedf/1259/combine_gt.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                         <td>
                             <model-viewer alt="" id=demo6_pred loading="eager" camera-orbit="-117deg 90deg 11m"
                                 style="width:500;height:500" src=./assets//threedf/1259/combine_pred.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                     </tr>
                 </table>
@@ -777,13 +778,13 @@
                             <model-viewer alt="" id=demo7_gt loading="eager" camera-orbit="-138deg 90deg 11m"
                                 style="width:500;height:500" src=./assets//threedf/4371/combine_gt.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                         <td>
                             <model-viewer alt="" id=demo7_pred loading="eager" camera-orbit="-138deg 90deg 11m"
                                 style="width:500;height:500" src=./assets//threedf/4371/combine_pred.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                     </tr>
                 </table>
@@ -804,13 +805,13 @@
                             <model-viewer alt="" id=demo8_gt loading="eager" camera-orbit="-219deg 90deg 11m"
                                 style="width:500;height:500" src=./assets//threedf/807/combine_gt.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                         <td>
                             <model-viewer alt="" id=demo8_pred loading="eager" camera-orbit="-219deg 90deg 11m"
                                 style="width:500;height:500" src=./assets//threedf/807/combine_pred.glb ar
                                 ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1"
-                                camera-controls2></model-viewer>
+                                camera-controls2 interaction-prompt="none"></model-viewer>
                         </td>
                     </tr>
                 </table>
@@ -1165,6 +1166,7 @@
     <script>
         showDemo(3)
         modelEventListeners()
+        enableInteraction()
     </script>
 </body>
 

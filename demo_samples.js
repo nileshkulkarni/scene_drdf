@@ -191,7 +191,7 @@ function modelEventListeners(){
 
 
 function create_single_model_viewer(tagid){
-    var model_viewer_html = '<model-viewer alt="" id=div_name loading="eager" camera-orbit="" style="width:500;height:500" src="" seamless-poster shadow-intensity="1" camera-controls2></model-viewer>'
+    var model_viewer_html = '<model-viewer alt="" id=div_name loading="eager" camera-orbit="" style="width:500;height:500" src="" seamless-poster shadow-intensity="1" camera-controls interaction-prompt="none"></model-viewer>'
     return model_viewer_html.replace('div_name', tagid)
 }
 

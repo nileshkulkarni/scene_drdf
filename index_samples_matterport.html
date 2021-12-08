@@ -251,8 +251,8 @@
     <table align=center width=1300px>
         <tr>
             <td class="td-center" style="padding: 20px;">
-                <input type="checkbox" value="0" onclick="enableInteraction()">
-                <p class="button button1" id="blink"> Enable Interaction</p>
+                <input type="checkbox" value="0" onclick="enableInteraction()" checked>
+                <p class="button button1" id="blink" no-blink> Enable Interaction</p>
             </td>
             <!-- <td class="td-center" style="padding: 20px;"> <button width=150px class="button button1" id="tie_controls"
                     onclick="enableInteractionTieControls()"> Tie Controls</button></td>        -->
@@ -283,6 +283,7 @@
     </script>
     <script>
         modelEventListeners()
-        window.addEventListener('load', load_image_list('matterport'));  
+        window.addEventListener('load', load_image_list('matterport'));
+        // enableInteraction()  
     </script>
 </body>
