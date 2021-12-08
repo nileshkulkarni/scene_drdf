@@ -33,17 +33,17 @@ function create_pages_header(numOfPages, current_page){
     td.innerHTML = "<td> <p style='font-size:22px;'> Pages </p></td>"
     tr.appendChild(td)
     for (var i = 0; i < numOfPages; i++){
-        if ((i % 12) == 0){
+        if ((i % 15) == 0){
             pagin_table.appendChild(tr)
             var tr = document.createElement('TR')
         }
 
         let td = document.createElement('TD')
         if (current_page == i){
-            button_str = "<p class='button1 paging_button'>" + i +  "</p>";
+            button_str = "<button class='button1 paging_button_selected'>" + ("0" + (i+1)).slice(-2); +  "</button>";
         }
         else{
-            button_str = "<button class=' button paging_button' onclick='changePage(" + i + ")'>" + i +  "</button>";
+            button_str = "<button class=' button paging_button' onclick='changePage(" + i + ")'>" + ("0" + (i+1)).slice(-2) +  "</button>";
             
         }
         // var button = document.createElement('BUTTON')
