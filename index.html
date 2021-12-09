@@ -295,7 +295,7 @@
                     <tr>
                         <td align=center width=100px>
                             <center>
-                                <span style="font-size:20px"><a href="./assets/scene_drdf.pdf">[pdf]</a></span>
+                                <span style="font-size:20px"><a href="https://arxiv.org/pdf/2112.04481.pdf">[pdf]</a></span>
                             </center>
                         </td>
                         <!-- <td align=center width=100px>
@@ -853,7 +853,7 @@
                             We analyse the behavior of distance functions in 1D case for ray going from  -&#8734; to &#8734;. This ray intersects at two locations &mu; and &mu;+1 along the x-axis. We plot the<span style='color:#648FFF'> <i>Signed Ray Distance Function (SRDF)</i></span>, 
                             <span style='color:#DC267F;'><i>Unsigned Ray Distance Function (URDF)</i></span>, <span style='color:#FE6100'><i>Directed Ray Distance Function (DRDF)</i></span>  using a dashed line (<span style='font-weight:bold;'>&mdash;&nbsp;&mdash;&nbsp;&mdash;</span>). We add noise to the intersection location (&mu;) using the <span style='color:#785EF0'>Gaussian distribution </span> and compute the expectation of these distance functions under this distribution (shown with a <span style='font-weight:bold;'>&mdash;&mdash;&mdash;</span> line). 
                         
-                            <p> Neural networks trained to mimic these distance functions with MSE minimizer are optimal when they produce the expected distance function.  Expected distance functions lack the crucial properties of distance functions (like norm of gradients is 1). This disparity increases more with uncertainty. Hence, outputs of neural networks do not behave like actual distance functions.  For instance, in case of URDF the expected distance function has the highest error at the location of the intersection &mu;. While the expected DRDF and SRDF also do not mimic the actual distance function their errors tend to occur away from the intersection in case of uncertainty. </p>
+                            <p> Neural networks trained to mimic these distance functions with MSE minimizer are optimal when they produce the expected distance function.  Expected distance functions lack the crucial properties of distance functions (like norm of gradients is 1). This disparity increases with more uncertainty. Hence, outputs of neural networks do not behave like actual distance functions.  For instance, in case of URDF the expected distance function has the highest error at the location of the intersection &mu;. While the expected DRDF and SRDF also do not mimic the actual distance function their errors tend to occur away from the intersection in case of uncertainty. </p>
 
                             <p> Using SRDF is not possible for real data as it is not watertight. Our proposed DRDF has low error at the location of the intersection and most of the error is pushed towards the mid way between the intersections. This property of DRDF allows us to recover intersections with a simple inference strategy of detecting +ve to -ve zero crossings along the ray.</p>
 
@@ -883,7 +883,7 @@
                     <td class="td-center">
                         <table align=center width=400px>
                             <tr>
-                                <td class="td-center"> Noise variance </td>
+                                <td class="td-center"> Noise Standard Deviation </td>
                                 <td class="td-center">
                                     0<input type='range' oninput='draw()' id='val' min='0.01' max='0.3' value='0.25'
                                         step='any'>0.3
@@ -1085,7 +1085,7 @@
                     <tr>
                         <td><span style="font-size:14pt">
                                 <center>
-                                    <a href="./assets/scene_drdf.pdf">[pdf]</a>
+                                    <a href="https://arxiv.org/pdf/2112.04481.pdf">[pdf]</a>
                                 </center>
                         </td>
                         <!-- <td><span style="font-size:14pt">
