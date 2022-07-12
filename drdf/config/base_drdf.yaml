@@ -1,0 +1,7 @@
+_BASE_: base_train.yaml
+DATALOADER:
+  SAMPLING:
+    RAY_DIR_LST: ["C"]
+    N_RAYS_LST: [20]
+MODEL:
+  DIR_ENCODING: False

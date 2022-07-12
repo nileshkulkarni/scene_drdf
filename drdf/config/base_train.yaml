@@ -1,0 +1,10 @@
+MATTERPORT_PATH: "data_dir/Matterport3d/scans/"
+
+DATALOADER:
+  FILTER_DEPTH: True
+  SAMPLING:
+    RAY_DIR_LST: ["C", "Z"] ## ['A'] ['X', 'Y', 'Z'] ## "C"
+    N_RAYS_LST: [20, 60]
+
+TRAIN:
+  BATCH_SIZE: 8
