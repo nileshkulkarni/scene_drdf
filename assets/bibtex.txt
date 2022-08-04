@@ -1,8 +1,9 @@
-@articale{kulkarni2021drdf,
+@inproceedings{kulkarni2021drdf,
   title={What's behind the couch? Directed Ray Distance Functions for 3D Scene Reconstruction},
   author={Kulkarni, Nilesh and Johnson, Justin and Fouhey, David F.},
   year={2022},
-  booktitle={European Conference on Computer Vision (ECCV)}
+  booktitle={European conference on computer vision},
+  organization={Springer}
 }
 
 
